@@ -1,0 +1,125 @@
+*{
+    color: white;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: arial;
+    font-size: 18;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+nav{
+
+margin: auto;
+    width: 800px;
+    background-color: firebrick;
+    
+}
+
+nav ul li{
+    display: inline-block;
+    position: relative;
+}
+
+nav ul li a{
+    position: relative;
+    display: inline-block;
+    color: white;
+    padding: 30px 50px;
+    transition: 0.3s;
+}
+
+
+nav ul li a::before {
+    content: '' ;
+    transition: 0.4s;
+    width: 0%;
+    border-radius: 3px;
+    height: 5px;
+    background-color: chartreuse;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+nav ul li a::after {
+    content: '' ;
+    width: 0%;
+    height: 5px;
+    background-color:chartreuse;
+    position: absolute;
+    top: 0;
+    right: 0 ;
+    border-radius: 3px;
+    transition: 0.4s;
+}
+nav ul li a:hover::before{
+    width: 100%;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+nav ul li ul{
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    width: 150px;
+    background-color: darkgreen;
+    transition: 0.4s;
+}
+
+nav ul li ul li{
+    display: block;
+}
+
+nav ul li:hover > ul{
+    opacity: 1;
+    visibility: visible;
+}
+
+nav ul li ul li ul{
+    left: 100%;
+    top: 0;
+    background-color: rgb(87, 141, 87);
+}
+
+nav ul li ul li 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
